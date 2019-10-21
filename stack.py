@@ -15,6 +15,9 @@ class Stack:
 
     def peek(self):
         return self.items[len(self.items)-1]
+
+    def push(self, item):
+        self.items.append(item)
  
 
 
