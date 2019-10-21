@@ -1,6 +1,6 @@
 # Stack: A stack.
 # Your implementation should pass the tests in stack.py.
-# YOUR NAME
+# KRISTEN ORUE
 
 class Stack:
 
@@ -14,7 +14,10 @@ class Stack:
         return self.items.pop()
 
     def peek(self):
-        return self.items[len(self.items)-1]
+        if self.is_empty():
+            raise IndexError()
+        else:
+            return self.items[len(self.items)-1]
 
     def push(self, item):
         self.items.append(item)
